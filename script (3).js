@@ -1,0 +1,29 @@
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("nav");
+
+menuBtn.addEventListener("click", () => {
+  nav.classList.toggle("show");
+});
+
+document.querySelectorAll(".nav a").forEach(link => {
+  link.addEventListener("click", () => nav.classList.remove("show"));
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add("visible");
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".skill-card, .project-card, .info-card, .timeline-item").forEach(el => {
+  el.style.opacity = "0";
+  el.style.transform = "translateY(18px)";
+  el.style.transition = "opacity .6s ease, transform .6s ease";
+  observer.observe(el);
+});
+
+const style = document.createElement("style");
+style.textContent = ".visible{opacity:1!important;transform:translateY(0)!important}";
+document.head.appendChild(style);
