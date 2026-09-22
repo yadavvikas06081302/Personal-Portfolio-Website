@@ -1,169 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of Vikas Yadav - Developer and B.Tech student.">
-  <title>Vikas Yadav | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vikas Yadav | B.Tech Student & Developer</title>
+
+    <meta name="description"
+        content="Personal portfolio of Vikas Yadav - B.Tech student, web developer and programmer.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="header">
-    <a href="#home" class="logo">Vikas<span>.</span></a>
-    <nav class="nav" id="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-  </header>
 
-  <main>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Vikas<span>.</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+
+    <!-- HERO -->
     <section id="home" class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">HELLO, I'M</p>
-        <h1>Vikas <span>Yadav</span></h1>
-        <h2>Web Developer & B.Tech Student</h2>
-        <p class="hero-desc">
-          I build clean, responsive and user-friendly web projects using modern
-          front-end technologies and practical problem-solving.
-        </p>
-        <div class="buttons">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn secondary" href="#contact">Contact Me</a>
+
+        <div class="hero-content">
+
+            <p class="small-title">HELLO, I'M</p>
+
+            <h1>Vikas Yadav</h1>
+
+            <h2>B.Tech Student & <span>Web Developer</span></h2>
+
+            <p>
+                I am a passionate B.Tech student interested in Web Development,
+                JavaScript, Python and building real-world projects.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+
+                <a href="https://github.com/yadavvikas06081302"
+                   target="_blank"
+                   class="btn outline">
+                    GitHub
+                </a>
+            </div>
+
         </div>
-        <div class="socials">
-          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+
+        <div class="hero-card">
+
+            <div class="profile-circle">
+                VY
+            </div>
+
+            <h3>Vikas Yadav</h3>
+
+            <p>B.Tech Student</p>
+
+            <div class="social-links">
+
+                <a href="https://github.com/yadavvikas06081302"
+                   target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://linkedin.com/in/vikas-yadav-552b94362"
+                   target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
         </div>
-      </div>
-     <div class="profile-image">
-    <img src="profile.png" alt="Vikas Yadav">
-        </div>
-      </div>
+
     </section>
 
+
+    <!-- ABOUT -->
     <section id="about" class="section">
-      <div class="section-title">
-        <p>ABOUT ME</p>
-        <h2>Turning ideas into <span>projects</span></h2>
-      </div>
-      <div class="about-grid">
-        <div>
-          <p>
-            I am Vikas Yadav, a B.Tech student interested in web development,
-            programming and practical technology projects. I enjoy learning
-            through hands-on projects and improving my development skills.
-          </p>
-          <p>
-            This portfolio showcases my skills, projects and academic journey.
-            Replace the placeholder details below with your latest information
-            before publishing.
-          </p>
+
+        <div class="section-title">
+            <p>GET TO KNOW ME</p>
+            <h2>About Me</h2>
         </div>
-        <div class="info-card">
-          <div><strong>Name</strong><span>Vikas Yadav</span></div>
-          <div><strong>Role</strong><span>Web Developer,</span></div>
-          <div><strong>Degree</strong><span>B.Tech</span></div>
-          <div><strong>Location</strong><span>Gorakhpur, Uttar Pradesh</span></div>
+
+        <div class="about">
+
+            <div class="about-text">
+
+                <h3>Hi, I'm Vikas Yadav 👋</h3>
+
+                <p>
+                    I am a B.Tech student with an interest in software development,
+                    web development and programming. I enjoy creating practical
+                    projects and learning new technologies.
+                </p>
+
+                <p>
+                    My goal is to improve my technical skills and build useful,
+                    responsive and user-friendly applications.
+                </p>
+
+                <div class="about-info">
+
+                    <div>
+                        <strong>Name:</strong>
+                        <span>Vikas Yadav</span>
+                    </div>
+
+                    <div>
+                        <strong>Education:</strong>
+                        <span>B.Tech</span>
+                    </div>
+
+                    <div>
+                        <strong>Role:</strong>
+                        <span>Student / Developer</span>
+                    </div>
+
+                    <div>
+                        <strong>Location:</strong>
+                        <span>Gorakhpur, Uttar Pradesh</span>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
+
     </section>
 
-    <section id="skills" class="section alt">
-      <div class="section-title">
-        <p>MY SKILLS</p>
-        <h2>Technologies I <span>work with</span></h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card"><span>01</span><h3>HTML</h3><p>Semantic and accessible web structure.</p></div>
-        <div class="skill-card"><span>02</span><h3>CSS</h3><p>Responsive layouts, animations and modern UI.</p></div>
-        <div class="skill-card"><span>03</span><h3>JavaScript</h3><p>Interactive and dynamic web experiences.</p></div>
-        <div class="skill-card"><span>04</span><h3>Git & GitHub</h3><p>Version control and project collaboration.</p></div>
-        <div class="skill-card"><span>05</span><h3>Python</h3><p>Programming, automation and project development.</p></div>
-        <div class="skill-card"><span>06</span><h3>AI / ML</h3><p>Exploring practical machine-learning projects.</p></div>
-      </div>
-    </section>
 
-    <section id="projects" class="section">
-      <div class="section-title">
-        <p>MY WORK</p>
-        <h2>Featured <span>projects</span></h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-number">01</div>
-          <h3>Face Mask Detection AI</h3>
-          <p>AI-based project for detecting whether a person is wearing a face mask.</p>
-          <div class="tags"><span>Python</span><span>AI/ML</span></div>
-          <a href="https://github.com/yadavvikas06081302/FaceMask-Detection-AI" target="_blank" rel="noopener">View on GitHub ↗</a>
-        </article>
-        <article class="project-card">
-          <div class="project-number">02</div>
-          <h3>To-Do List</h3>
-          <p>A clean task-management web app with an interactive front-end.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a href="https://github.com/yadavvikas06081302/TO-DO-LIST" target="_blank" rel="noopener">View on GitHub ↗</a>
-        </article>
-        <article class="project-card">
-          <div class="project-number">03</div>
-          <h3>Simple Calculator</h3>
-          <p>A practical calculator project supporting basic arithmetic operations.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a href="https://github.com/" target="_blank" rel="noopener">View on GitHub ↗</a>
-        </article>
-      </div>
-    </section>
+    <!-- SKILLS -->
+    <section id="skills" class="section dark">
 
-    <section id="education" class="section alt">
-      <div class="section-title">
-        <p>EDUCATION</p>
-        <h2>My academic <span>journey</span></h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="dot"></span>
-          <div>
-            <p class="year">B.Tech</p>
-            <h3>Bachelor of Technology</h3>
-            <p>Currently pursuing B.Tech. INSTITUTE OF TECHNOLOGY AND MANAGEMENT GIDA GORAKHPUR U.P.</p>
-          </div>
+        <div class="section-title">
+            <p>WHAT I KNOW</p>
+            <h2>My Skills</h2>
         </div>
-      </div>
+
+        <div class="skills-grid">
+
+            <div class="skill">
+                <div class="skill-icon">🌐</div>
+                <h3>HTML</h3>
+                <p>Web Page Structure</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS</h3>
+                <p>Responsive Web Design</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>Interactive Websites</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-icon">🐍</div>
+                <h3>Python</h3>
+                <p>Programming & Projects</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-icon">☕</div>
+                <h3>Java</h3>
+                <p>Programming Fundamentals</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-icon">🔗</div>
+                <h3>GitHub</h3>
+                <p>Version Control & Projects</p>
+            </div>
+
+        </div>
+
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="section-title">
-        <p>GET IN TOUCH</p>
-        <h2>Let's work <span>together</span></h2>
-      </div>
-      <p class="contact-text">Have a project, internship opportunity or collaboration in mind? Feel free to connect.</p>
-      <div class="contact-links">
-        <a href="mailto:your-email@example.com">ydvvikas813339@gmail.com.com</a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">https://linkedin.com/in/vikas-yadav-552b94362 ↗</a>
-        <a href="https://github.com/yadavvikas06081302" target="_blank" rel="noopener">https://github.com/yadavvikas06081302 ↗</a>
-        <div class="contact-item">
-    <h3>Phone</h3>
-    <a href="tel:+917379047652">+91 7379047652</a>
-</div>
 
-<div class="contact-item">
-    <h3>WhatsApp</h3>
-    <a href="https://wa.me/917379047652" target="_blank">
-        Chat on WhatsApp
-    </a>
-</div>
-      </div>
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+
+        <div class="section-title">
+            <p>MY ACADEMIC JOURNEY</p>
+            <h2>Education</h2>
+        </div>
+
+        <div class="education-card">
+
+            <div class="education-icon">🎓</div>
+
+            <div>
+                <h3>Bachelor of Technology (B.Tech)</h3>
+
+                <h4>
+                    Institute of Technology and Management,
+                    GIDA, Gorakhpur
+                </h4>
+
+                <p>
+                    Currently pursuing B.Tech and developing technical
+                    knowledge in programming, web development and software
+                    technologies.
+                </p>
+            </div>
+
+        </div>
+
     </section>
-  </main>
 
-  <footer>
-    <p>© <span id="year"></span> Vikas Yadav. All Rights Reserved.</p>
-  </footer>
 
-  <script src="script.js"></script>
+    <!-- PROJECTS -->
+    <section id="projects" class="section dark">
+
+        <div class="section-title">
+            <p>MY WORK</p>
+            <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+            <div class="project-card">
+
+                <div class="project-image shopping">
+                    🛒
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Online Shopping Clone</h3>
+
+                    <p>
+                        A responsive online shopping website developed
+                        using HTML, CSS and JavaScript.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://yadavvikas06081302.github.io/Online-shopping-clone/"
+                           target="_blank">
+                            Live Demo
+                        </a>
+
+                        <a href="https://github.com/yadavvikas06081302"
+                           target="_blank">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+            <div class="project-card">
+
+                <div class="project-image chess">
+                    ♟️
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Chess Game</h3>
+
+                    <p>
+                        Browser-based chess game project created using
+                        HTML, CSS and JavaScript.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://yadavvikas06081302.github.io/Chess-game/"
+                           target="_blank">
+                            Live Demo
+                        </a>
+
+                        <a href="https://github.com/yadavvikas06081302"
+                           target="_blank">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+            <div class="project-card">
+
+                <div class="project-image ludo">
+                    🎲
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Ludo Game</h3>
+
+                    <p>
+                        Interactive browser-based Ludo game project
+                        with a responsive interface.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://yadavvikas06081302.github.io/Ludo-Game/"
+                           target="_blank">
+                            Live Demo
+                        </a>
+
+                        <a href="https://github.com/yadavvikas06081302"
+                           target="_blank">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 4 -->
+            <div class="project-card">
+
+                <div class="project-image snake">
+                    🐍
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Snake Game</h3>
+
+                    <p>
+                        Classic Snake Game developed for web browsers
+                        using JavaScript.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://yadavvikas06081302.github.io/Snake-Game/"
+                           target="_blank">
+                            Live Demo
+                        </a>
+
+                        <a href="https://github.com/yadavvikas06081302"
+                           target="_blank">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- GITHUB -->
+    <section class="github-section">
+
+        <h2>More Projects on GitHub</h2>
+
+        <p>
+            Check out my GitHub profile to see my source code,
+            projects and development work.
+        </p>
+
+        <a class="btn"
+           href="https://github.com/yadavvikas06081302"
+           target="_blank">
+            Visit My GitHub
+        </a>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+
+        <div class="section-title">
+            <p>GET IN TOUCH</p>
+            <h2>Contact Me</h2>
+        </div>
+
+        <div class="contact-grid">
+
+            <a href="mailto:your-email@gmail.com"
+               class="contact-card">
+
+                <span>📧</span>
+
+                <div>
+                    <h3>Email</h3>
+                    <p>Send me an Email</p>
+                </div>
+
+            </a>
+
+
+            <a href="https://linkedin.com/in/vikas-yadav-552b94362"
+               target="_blank"
+               class="contact-card">
+
+                <span>💼</span>
+
+                <div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me</p>
+                </div>
+
+            </a>
+
+
+            <a href="https://github.com/yadavvikas06081302"
+               target="_blank"
+               class="contact-card">
+
+                <span>💻</span>
+
+                <div>
+                    <h3>GitHub</h3>
+                    <p>View my projects</p>
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>Vikas Yadav</h3>
+
+        <p>
+            B.Tech Student | Web Developer
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © <span id="year"></span> Vikas Yadav. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
+         
+     
+    
